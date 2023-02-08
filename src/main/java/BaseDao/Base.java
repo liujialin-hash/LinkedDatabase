@@ -106,6 +106,7 @@ public class Base {
                 }
                 String jsonStr=JSONObject.toJSONString(map);
 
+
                 //这是第一种办法
 //                T t = clazz.newInstance();
 //                Class<?> aClass = t.getClass();
@@ -118,7 +119,7 @@ public class Base {
 
                 ObjectMapper mapper = new ObjectMapper();
 
-                //这是第种
+                //这是第种JSONUtil.fromjson
                o = mapper.readValue(jsonStr, clazz);
                 System.out.println(o);
             }
